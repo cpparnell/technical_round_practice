@@ -39,7 +39,7 @@ Parse the argument:
 
 ## Starting a Session
 
-1. **Pick the Brief.** If a slug was given, use it. Otherwise read `sessions/INDEX.md`, list the Brief folders for this mode, drop any already used in a Session of this mode, and pick one at random (`ls briefs/<mode> | sort -R | head -1` over the unused set). If every Brief has been used, pick at random from all of them and say so.
+1. **Pick the Brief.** If `sessions/INDEX.md` doesn't exist, copy `sessions/INDEX.template.md` to it first. If a slug was given, use it. Otherwise read `sessions/INDEX.md`, list the Brief folders for this mode, drop any already used in a Session of this mode, and pick one at random (`ls briefs/<mode> | sort -R | head -1` over the unused set). If every Brief has been used, pick at random from all of them and say so.
 2. **Create the Session folder** `sessions/<YYYY-MM-DD>-<mode>-<slug>/` (append `-2`, `-3` on collision). Inside it create `state.md`, `log.md`, `notes.md`, an empty `plan.md`, and `app/` with `git init` run in it.
 3. **Add a row** to `sessions/INDEX.md` with status `in-progress`.
 4. **Read the Brief's `interviewer.md`** silently.
@@ -99,7 +99,7 @@ last_activity: 1761660420
 
 **`plan.md`**: the candidate's Plan. They write it (or direct their agent to); you only critique it.
 
-**`sessions/INDEX.md`**: one row per Session: `| id | mode | brief | status | headline |`.
+**`sessions/INDEX.md`**: one row per Session: `| id | mode | brief | status | headline |`. Gitignored and local to the candidate; created from `sessions/INDEX.template.md`, which stays blank.
 
 ## Clock
 

@@ -24,5 +24,5 @@ Don't open any `briefs/**/interviewer.md` file. Those are the hidden Interviewer
 
 - `briefs/full/`: 6 full-length Briefs
 - `briefs/speed/`: 6 simpler Briefs
-- `sessions/`: one folder per Session (`state.md`, `log.md`, `plan.md`, `notes.md`, `scorecard.md`, `app/`), plus `INDEX.md`
+- `sessions/`: one folder per Session (`state.md`, `log.md`, `plan.md`, `notes.md`, `scorecard.md`, `app/`), plus `INDEX.md` (created from `INDEX.template.md` on first run). Everything under `sessions/` except the template is gitignored.
 - `.claude/skills/mock-interview/`: the interviewer skill

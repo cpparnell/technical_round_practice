@@ -1,0 +1,6 @@
+.DS_Store
+
+# Sessions are personal: only the blank index template is shared.
+# The skill copies it to sessions/INDEX.md on first use.
+sessions/*
+!sessions/INDEX.template.md
